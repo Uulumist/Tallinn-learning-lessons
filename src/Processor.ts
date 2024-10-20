@@ -10,7 +10,7 @@ export class Processor {
   }
 
   revokeConsent(user: User): boolean {
-    if (user.age < 18) {
+    if (user.userage < 18) {
       user.consentGiven = false
       return true
     } else return false
